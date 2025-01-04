@@ -1,4 +1,32 @@
 
+/*
+
+    colors:
+
+    orange: #ffa500
+    baby blue: #d3f5f5
+    very light gray: #f2f3f4
+    highlighter pink: #ff69b4
+    light gray: #dbe2e9
+    white: #ffffff
+
+
+*/
+
+
+li {
+
+    list-style: none;
+    
+}
+
+a {
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
 body {
 
     margin: 0;
@@ -6,65 +34,106 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: Verdana, sans-serif;
+    height: 100%;
+    height: 100vh;
+    font-family: 'proxima-nova', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
-li {
 
-    list-style: none;
-}
+footer {
 
-a {
-
-    text-decoration: none;
-    animation: rainbow 2.5s linear;
-    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    color: #ffa500;
+    padding-bottom: 16px;
 }
 
 
 #site-header {
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 16px;
+    color: #ffffff;
 
+    background-color: #ffa500;
+    font-weight: bold;
 }
 
-#nav-container {
 
-    background-color: white;
-    border-radius: 100px;
-}
+
 
 #nav-bar {
 
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
 }
 
 
-#gif-div {
+
+#sub-header {
 
     display: flex;
+    justify-content: flex-start;
+    padding: 32px;
+    gap: 16px;
+
+    background-color: #ffffff;
+    color: #ffffff;
+    opacity: 0.4;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 10px ), repeating-linear-gradient( #ffa50055, #ffa500 );
+}
+
+
+#sub-header-text {
+
+    background-color: #ffa500;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+
+
+#main-content {
+
+    margin: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
     justify-content: center;
+    align-items: center;
+
+    border: solid;
+    border-radius: 16px;
+    color: #ffa500;
+    
 }
 
-#gir-gif {
+#smilies {
 
     width: 80px;
-    height: 86px;
-}
-
-#smiley-gif {
-
-    width: 80px;
-    height: 76;
+    height: 76px;
+    position: absolute;
+    bottom: 70px;
+    right: 30px;
 }
 
 .rainbow {
 
     animation: rainbow 2.5s linear;
     animation-iteration-count: infinite;
+}
+
+@font-face {
+    font-family: 'proxima-nova';
+    src: url(fonts/proxima-nova/proximanova_regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -108,4 +177,7 @@ a {
 
     
 }
+
+
+
 
