@@ -3,21 +3,30 @@
 
     colors:
 
-    orange: #ffa500
+    weird color palette:
+
+    orange: #0032db
     baby blue: #d3f5f5
     very light gray: #f2f3f4
     highlighter pink: #ff69b4
     light gray: #dbe2e9
     white: #ffffff
+    
 
+    frutiger-aero palette:
+
+    blue: #0032db
+    light-blue: #0689e4
+    green: #71ab23
+    yellow: #fbb905
+    orange: #d55e0f
 
 */
 
 
 li {
 
-    list-style: none;
-    
+    list-style: none;    
 }
 
 a {
@@ -37,7 +46,8 @@ body {
     height: 100%;
     height: 100vh;
     font-family: 'proxima-nova', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    background-color: #0032db;
+    /* background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 10px ), repeating-linear-gradient( #0032db55, #0032db ); */
 }
 
 
@@ -45,8 +55,12 @@ footer {
 
     display: flex;
     justify-content: center;
-    color: #ffa500;
-    padding-bottom: 16px;
+    align-items: center;
+    color: #0032db;
+    background-color: #ffffff;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    /* padding-bottom: 16px; */
 }
 
 
@@ -57,7 +71,7 @@ footer {
     padding: 16px;
     color: #ffffff;
 
-    background-color: #ffa500;
+    background-color: #0032db;
     font-weight: bold;
 }
 
@@ -81,21 +95,13 @@ footer {
     justify-content: flex-start;
     padding: 32px;
     gap: 16px;
-
     background-color: #ffffff;
     color: #ffffff;
-    opacity: 0.4;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 10px ), repeating-linear-gradient( #ffa50055, #ffa500 );
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    /* opacity: 0.4; */
+    
 }
-
-
-#sub-header-text {
-
-    background-color: #ffa500;
-    padding: 16px;
-    border-radius: 16px;
-}
-
 
 
 #main-content {
@@ -110,8 +116,9 @@ footer {
 
     border: solid;
     border-radius: 16px;
-    color: #ffa500;
-    
+    color: #0032db;
+    background-color: #ffffff;
+    /* background-image: url(assets/faero.jpeg); */
 }
 
 #smilies {
@@ -123,17 +130,56 @@ footer {
     right: 30px;
 }
 
-.rainbow {
 
-    animation: rainbow 2.5s linear;
-    animation-iteration-count: infinite;
+
+.glass-green {
+
+    position: relative;
+    background-color: #71ab23;
+    background-image: linear-gradient(#79d501, #99fb21);
+    padding: 16px;
+    border-radius: 16px;
 }
+.glass-green:after {
+
+    content: '';
+    position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+    border-radius: 16px;
+}
+
 
 @font-face {
     font-family: 'proxima-nova';
     src: url(fonts/proxima-nova/proximanova_regular.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+/* Unused stuff */
+
+
+
+/* Circle Radius Texture CSS*/
+/* background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 10px ), repeating-linear-gradient( #0032db55, #0032db ); */
+
+
+.rainbow {
+
+    animation: rainbow 2.5s linear;
+    animation-iteration-count: infinite;
 }
 
 
